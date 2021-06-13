@@ -1,0 +1,58 @@
+@media screen and (min-width: 540px) { /*PC用*/
+    header{
+        background-image: url("./../static/images/headerPC.svg");
+
+    }
+    header > #header_slogan{
+        font-size: 50px;
+    }
+
+    main{
+        background-image:url(./../static/images/topics_pagePC.svg)
+    }
+
+    #main_slogan1 {
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    #main_slogan2 {
+        margin-left: 50px;
+        font-size: 30px;
+    }
+
+    #button {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #main_slogan1 {
+        margin-left: 75px;
+        font-size: 30px;
+    }
+
+    #main_slogan2 {
+        margin-left: 75px;
+        font-size: 50px;
+    }
+
+    main {
+        background-image: url("./../static/images/Top_pagePC.svg");
+
+    }
+    
+    header {
+        background-image: url("./../static/images/headerPC.svg");
+    }
+
+    #button {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #button {
+        width: 30%;
+    }
+}

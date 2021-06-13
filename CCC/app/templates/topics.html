@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polinion</title>
+    <link rel="stylesheet" href="../static/topics.css">
+    <link rel="stylesheet" href="../static/topics-PC.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="header_word">Polinion</div>
+    </header>
+
+    <main>
+        <div class="cards">
+            {% for FLASKDB_info in FLASKDB_infos %}
+            <div class="card">
+                <p>{{FLASKDB_info[1]}}</p>
+                <a class="twitter" target="_blank"
+                    href="https://twitter.com/intent/tweet?text={{FLASKDB_info[1]}}&url=https://ccc-zyugemu.herokuapp.com/&hashtags=Polinion">
+                    Twitterで意見</a>
+                <a class="facebook" target="_blank"
+                    href="https://www.facebook.com/dialog/share?app_id=640540216785473&display=popup&href=https://ccc-zyugemu.herokuapp.com/">Facebookで意見</a>
+                <button class="copy" id="copy-page"><span id="cAction">URLをコピー</span></button>
+            </div>
+            {% endfor %}
+
+            <a href="/add" class="card toadd"><img src="../static/images/add.svg"></a>
+        </div>
+        <a href="/" class="back"><img src="../static/images/back_button.svg"></a>
+    </main>
+
+    <script>
+        document.getElementById("copy-page").onclick = function () {
+            $(document.body).append("<textarea id=\"copyTarget\" style=\"position:absolute; left:-9999px; top:0px;\" readonly=\"readonly\">" + location.href + "</textarea>");
+            let obj = document.getElementById("copyTarget");
+            let range = document.createRange();
+            range.selectNode(obj);
+            window.getSelection().addRange(range);
+            document.execCommand('copy');
+            document.getElementById("cAction").innerHTML = "コピーしました";
+        };
+    </script>
+
+</body>
+
+</html>

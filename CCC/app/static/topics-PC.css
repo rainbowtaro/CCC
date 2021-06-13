@@ -1,0 +1,13 @@
+@media screen and (min-width: 540px) { /*PC用*/
+    header{
+        background-image: url("./../static/images/headerPC.svg");
+    }
+
+    header > #header_word{
+        font-size: 50px;
+    }
+
+    main {
+        background-image: url("./../static/images/topics_pagePC.svg");
+    }
+}

@@ -1,0 +1,145 @@
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+main{
+    background-image:url("./../static/images/topics_page.svg");
+    background-position:left top;
+    background-size:cover;
+}
+
+header{
+    height:95px;
+    width:100%;
+    background-image: url("./../static/images/header.svg");
+    background-position:left bottom;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+    header > #header_word{
+        position:absolute;
+        top:2%;
+        left:6%;
+        font-family: Alegreya Sans SC;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        letter-spacing: 0.07em;
+        color: #544C09;
+    }
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 316px;
+    margin: 5%;
+    background: #F1F1F1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 28px;
+}
+
+.card p {
+    width: 240px;
+    height: 76px;
+    padding: 20px 0;
+    margin: 20px 0;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.twitter {
+    display: block;
+    width: 240px;
+    padding: 7px 0;
+    margin: 7px 0;
+    text-align: center;
+
+    color: white;
+    background: #7EDEFC;
+    border-radius: 5px;
+}
+
+.twitter:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: -3px 5px 0 0;
+    background: url("../static/images/Twitter.svg") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.facebook {
+    display: block;
+    width: 240px;
+    padding: 7px 0;
+    margin: 7px 0;
+    text-align: center;
+
+    color: white;
+    background: #597CFB;
+    border-radius: 5px;
+}
+
+.facebook:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: -3px 5px 0 0;
+    background: url("../static/images/facebook.svg") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.copy {
+    display: block;
+    width: 240px;
+    padding: 7px 0;
+    margin: 7px 0;
+    text-align: center;
+    
+    color: white;
+    background: #BEBFB5;
+    border-radius: 5px;
+}
+
+.copy:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: -3px 5px 0 0;
+    background: url("../static/images/copy.svg") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.toadd {
+    background: #DBDBDB;
+    justify-content: center;
+}
+
+.back {
+    display: block;
+    width: 291px;
+    height: 41px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

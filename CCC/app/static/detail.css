@@ -1,0 +1,68 @@
+*{
+    padding: 0px;
+    border: 0px;
+    margin:0px;
+}
+
+    header {
+        height:95px;
+        width:100%;
+        background-image: url("./../static/images/header.svg");
+        background-position:left bottom;
+        background-size:cover;
+        background-repeat: no-repeat;
+
+    }
+    
+    
+    header > #header_slogan{
+        position:absolute;
+        top:2%;
+        left:6%;
+        font-family: Alegreya Sans SC;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        letter-spacing: 0.07em;
+        color: #544C09;
+    }
+    
+    #main{
+        width: 90%;
+        margin: auto;
+    }
+
+    #main_title {
+        font-family: Alegreya Sans SC;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 0.07em;
+        color: #000000;
+        border-bottom: solid 1px black;
+        margin: 10px 0;
+    }
+
+
+    #main_contents {
+        font-size: 15px;
+    }
+
+
+    #back_button{
+        display: block;
+        width: 291px;
+        height: 41px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+@media screen and (min-width: 540px) { /*PC用*/
+    header{
+        background-image: url("./../static/images/headerPC.svg");
+
+    }
+    header > #header_slogan{
+        font-size: 50px;
+    }
+}
